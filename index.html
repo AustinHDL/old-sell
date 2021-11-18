@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>订购页面</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<main class="main">
+	<div class="cart-container">
+		<div class="cart-header">
+			<h1 class="cart-header-text" id="summary-total">
+				您订购的总价为0.00令吉。
+			</h1>
+		</div>
+		<ol class="bag-items">
+			<li class="bag-item">
+				<div class="iteminfo">
+					<div class="iteminfo-image">
+						<img width="400" height="400" src="Images/01.jpg">
+					</div>
+					<div class="iteminfo-content">
+						<div class="iteminfo-detail">
+							<div class="iteminfo-detail-title-wrapper">
+								<h2 class="iteminfo-detail-title">
+									<span>
+										白果（一包五片）
+									</span>
+								</h2>
+							</div>
+							<div class="iteminfo-detail-quantity">
+								<div class="quantity">
+									<div class="quantity-selector">
+										<div class="quantity-wrapper">
+											<select name="bg" class="form-dropdown" id="bg-quantity" onchange="myFunction()" required>
+												<option value="0">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+												<option value="9">9</option>
+												<option value="10">10</option>
+												<option value="11">11</option>
+												<option value="12">12</option>
+												<option value="13">13</option>
+												<option value="14">14</option>
+												<option value="15">15</option>
+												<option value="16">16</option>
+												<option value="17">17</option>
+												<option value="18">18</option>
+												<option value="19">19</option>
+												<option value="20">20</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="iteminfo-detail-pricedetail">
+								<div class="iteminfo-detail-price">
+									<span id="bg-totalprice">RM0.00</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="bag-item">
+				<div class="iteminfo">
+					<div class="iteminfo-image">
+						<img width="400" height="400" src="Images/01.jpg">
+					</div>
+					<div class="iteminfo-content">
+						<div class="iteminfo-detail">
+							<div class="iteminfo-detail-title-wrapper">
+								<h2 class="iteminfo-detail-title">
+									<span>
+										白果（一包十片）
+									</span>
+								</h2>
+							</div>
+							<div class="iteminfo-detail-quantity">
+								<div class="quantity">
+									<div class="quantity-selector">
+										<div class="quantity-wrapper">
+											<select name="bg02" class="form-dropdown" id="bg02-quantity" onchange="myFunction()" required>
+												<option value="0">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+												<option value="9">9</option>
+												<option value="10">10</option>
+												<option value="11">11</option>
+												<option value="12">12</option>
+												<option value="13">13</option>
+												<option value="14">14</option>
+												<option value="15">15</option>
+												<option value="16">16</option>
+												<option value="17">17</option>
+												<option value="18">18</option>
+												<option value="19">19</option>
+												<option value="20">20</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="iteminfo-detail-pricedetail">
+								<div class="iteminfo-detail-price">
+									<span id="bg02-totalprice">RM0.00</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="bag-item">
+				<div class="iteminfo">
+					<div class="iteminfo-image">
+						<img width="400" height="400" src="Images/02.jpg">
+					</div>
+					<div class="iteminfo-content">
+						<div class="iteminfo-detail">
+							<div class="iteminfo-detail-title-wrapper">
+								<h2 class="iteminfo-detail-title">
+									<span>
+										红酒
+									</span>
+								</h2>
+							</div>
+							<div class="iteminfo-detail-quantity">
+								<div class="quantity">
+									<div class="quantity-selector">
+										<div class="quantity-wrapper">
+											<select name="hj" class="form-dropdown" id="hj-quantity" onchange="myFunction()" required>
+												<option value="0">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+												<option value="9">9</option>
+												<option value="10">10</option>
+												<option value="11">11</option>
+												<option value="12">12</option>
+												<option value="13">13</option>
+												<option value="14">14</option>
+												<option value="15">15</option>
+												<option value="16">16</option>
+												<option value="17">17</option>
+												<option value="18">18</option>
+												<option value="19">19</option>
+												<option value="20">20</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="iteminfo-detail-pricedetail">
+								<div class="iteminfo-detail-price">
+									<span id="hj-totalprice">RM0.00</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="bag-item gift" id="gift">
+				<div class="iteminfo">
+					<div class="iteminfo-image">
+						
+					</div>
+					<div class="iteminfo-content">
+						<div class="iteminfo-detail">
+							<div class="iteminfo-detail-title-wrapper">
+								<h2 class="iteminfo-detail-title">
+									<span>
+										红糟
+									</span>
+								</h2>
+							</div>
+							<div class="iteminfo-detail-quantity">
+								<div class="quantity">
+									<div class="quantity-selector">
+										<div class="quantity-wrapper">
+											<select name="hz" class="form-dropdown" id="hz-quantity" onchange="myFunction()" required>
+												<option value="0">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="iteminfo-detail-pricedetail">
+								<div class="iteminfo-detail-price">
+									<span id="hz-totalprice">免费</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ol>
+		<div class="summary">
+			<div class="summary-container">
+				<div class="summary-content summary-subtotal">
+					<div class="summary-labelvalue">
+						<div class="summary-label">
+							小计
+						</div>
+						<div class="summary-value" id="subtotal">
+							RM0.00
+						</div>
+					</div>
+				</div>
+				<div class="summary-content summary-shipping">
+					<div class="summary-labelvalue">
+						<div class="summary-label">
+							运输
+						</div>
+						<div class="summary-value" id="shipping">
+							RM0.00
+						</div>
+					</div>
+				</div>
+				<div class="summary-total">
+					<div class="summary-label">
+						您的总数
+					</div>
+					<div class="summary-value" id="total">
+						RM0.00
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cart-button">
+			<div class="cart-button-container">
+				<div class="cart-button-wrapper">
+					<button class="form-button">
+						<span>
+							生成订单
+						</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+</body>
+<script type="text/javascript" src="cal.js"></script>
+</html>

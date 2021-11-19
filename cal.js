@@ -4,6 +4,7 @@
 	    var send = document.getElementById("keep");//送货上门
 	    if (selfp.checked) {
 	        document.getElementById("summary-shipping").style.display = "none";
+	        document.getElementById("address-box").style.display = "none";
 	        document.getElementById("select-cover-1").removeAttribute("onclick");
 	        document.getElementById("select-cover-2").removeAttribute("onclick");
 	        document.getElementById("select-cover-3").removeAttribute("onclick");
@@ -13,6 +14,7 @@
 	        document.getElementById("hz-quantity").disabled = false;
 	    } else if (send.checked) {
 	        document.getElementById("summary-shipping").style.display = "block";
+	        document.getElementById("address-box").style.display = "block";
 	        document.getElementById("select-cover-1").removeAttribute("onclick");
 	        document.getElementById("select-cover-2").removeAttribute("onclick");
 	        document.getElementById("select-cover-3").removeAttribute("onclick");
@@ -22,6 +24,7 @@
 	        document.getElementById("hz-quantity").disabled = false;
 	    } else {
 	        document.getElementById("summary-shipping").style.display = "none";
+	        document.getElementById("address-box").style.display = "block";
 	        document.getElementById("bg-quantity").disabled = true;
 	        document.getElementById("bg02-quantity").disabled = true;
 	        document.getElementById("hj-quantity").disabled = true;
@@ -75,32 +78,46 @@
 	    if (selfp.checked) {
 	        var total = subtotal;
 	        document.getElementById("total").innerHTML = "RM" + total.toFixed(2);
+	        document.getElementById("product-select-total").innerHTML = "<b>总数：RM" + total.toFixed(2) + "</b>";
 	        document.getElementById("summary-total").innerHTML = "您的订单总价为" + total.toFixed(2) + "令吉。";
 	        document.getElementById("summary-total").style.color = "#1d1d1f";
 	    } else if (send.checked && subtotal < 0.01) {
 	        var total = subtotal + original;
 	        document.getElementById("total").innerHTML = "RM" + total.toFixed(2);
+	        document.getElementById("product-select-total").innerHTML = "<b>总数：RM" + total.toFixed(2) + "</b>";
 	        document.getElementById("summary-total").innerHTML = "您的订单总价为" + total.toFixed(2) + "令吉。";
 	        document.getElementById("summary-total").style.color = "#1d1d1f";
 	    } else if (send.checked && subtotal > 39.99) {
 	        var total = subtotal + original;
 	        document.getElementById("total").innerHTML = "RM" + total.toFixed(2);
+	        document.getElementById("product-select-total").innerHTML = "<b>总数：RM" + total.toFixed(2) + "</b>";
 	        document.getElementById("summary-total").innerHTML = "您的订单总价为" + total.toFixed(2) + "令吉。";
 	        document.getElementById("summary-total").style.color = "#1d1d1f";
 	    } else {
 	        var total = subtotal + pay;
 	        document.getElementById("total").innerHTML = "RM" + total.toFixed(2);
+	        document.getElementById("product-select-total").innerHTML = "<b>总数：RM" + total.toFixed(2) + "</b>";
 	        document.getElementById("summary-total").innerHTML = "您的订单总价为" + total.toFixed(2) + "令吉。";
 	        document.getElementById("summary-total").style.color = "#1d1d1f";
 	    }
 
+	    //隐藏讯息
+	    if (bgquantity > 0) {
+	    	document.getElementById("customer").style.display = "block";
+	    } else if (bg02quantity > 0) {
+	    	document.getElementById("customer").style.display = "block";
+	    } else if (hjquantity > 0) {
+	    	document.getElementById("customer").style.display = "block";
+	    } else {
+	    	document.getElementById("customer").style.display = "none";
+	    }
 	}
 
 	//提醒 先选择物流
 	function myCheck() {
 	    var select = document.getElementsByTagName("select");
 
-	    if (select.disable = true) {
+	    if (select.disabled = true) {
 	        document.getElementById("summary-total").innerHTML = "请先选择物流";
 	        document.getElementById("summary-total").style.color = "red";
 	        window.scrollBy(0, -5000);

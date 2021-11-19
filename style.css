@@ -451,8 +451,14 @@ button {
     display: inline-block;
 }
 
+.cart-button .cart-button-container .cart-button-wrapper .form-button:disabled {
+    background: #1d1d1f;
+    pointer-events: none;
+}
+
 .customer {
     margin-top: 41px;
+    display: none;
 }
 
 .customer .customer-container {
@@ -629,6 +635,66 @@ button {
     display: flex
 }
 
+.info {
+    display: none;
+}
+
+.info .info-container {
+    margin-left: 25%;
+    flex-basis: 75%;
+    max-width: 75%;
+}
+
+.info .info-container .info-wrapper {
+    margin-top: 20px;
+    width: 360px;
+    float: right;
+}
+
+.info .info-container .info-wrapper .content{
+    width: 100%;
+    margin: 18px 0;
+    padding: 14px 0;
+    background: #F5F5F7;
+    border-radius: 12px;
+    display: block;
+}
+
+.info .info-container .info-wrapper .content .content-box{
+    margin: 0 14px;
+    pointer-events: none;
+}
+
+.info .info-container .info-wrapper .content .content-box .title{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.info .info-container .info-wrapper .content .content-box .btn {
+    cursor: pointer;
+    text-align: center;
+    background: #0030A7;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
+    min-width: 28px;
+    padding: 18px 31px;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 12px;
+    white-space: normal;
+    display: inline-block;
+    border: none;
+    margin-top: 10px;
+    pointer-events: auto;
+}
+
 @media only screen and (max-width: 1023px) and (max-device-width: 736px) {
     .cart-container {
         padding-top: 58px;
@@ -781,5 +847,16 @@ button {
         margin-left: 0;
         flex-basis: 100%;
         max-width: 100%;
+    }
+
+    .info .info-container {
+        margin-left: 0;
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .info .info-container .info-wrapper {
+        margin-top: 20px;
+        width: 100%;
     }
 }

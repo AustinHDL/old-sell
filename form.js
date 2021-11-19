@@ -49,3 +49,14 @@ function myFill4() {
 
     }
 }
+
+function myGeB() {
+    var nameG = document.getElementById("name");
+    var hpG = document.getElementById("hpnumber");
+
+    if (nameG.value.length > 0 && hpG.value.length > 0) {
+        document.getElementById("form-button").disabled = false;
+    } else {
+        document.getElementById("form-button").disabled = true;
+    }
+}

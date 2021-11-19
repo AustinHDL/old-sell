@@ -61,6 +61,120 @@ button {
     padding-bottom: 2px;
 }
 
+.cart-container .cart-header .cart-header-message {
+    padding-top: 13px;
+}
+
+.cart-container .cart-header .cart-shipping-button {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.cart-container .cart-header .cart-shipping-button .cart-shipping-button-container {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.cart-container .cart-header .cart-shipping-button .cart-shipping-button-container .cart-shipping-button-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.cart-container .cart-header .cart-shipping-button .cart-shipping-button-container .cart-shipping-button-wrapper fieldset {
+    margin-top: 31px;
+    float: right;
+    border: 0;
+    width: 300px;
+}
+
+.large-1 {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.buyflow-selector-group {
+    list-style: none;
+    width: auto;
+    margin-top: 0;
+    margin-left: -7px;
+    margin-right: -7px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.form-selector {
+    position: relative;
+    display: flex;
+    margin-top: 14px;
+    padding-left: 7px;
+    padding-right: 7px;
+    box-sizing: border-box;
+}
+
+.form-selector .form-selector-input:hover~.form-selector-label {
+    border-color: #86868b
+}
+
+.form-selector .form-selector-input:checked~.form-selector-label {
+    border-color: #0071e3
+}
+
+.form-selector .form-selector-input.focused~.form-selector-label,
+.form-selector .form-selector-input:focus~.form-selector-label {
+    border-color: #0071e3;
+    box-shadow: 0 0 0 4px rgba(0, 125, 250, .6)
+}
+
+.form-selector-input {
+    position: absolute;
+    opacity: 0;
+}
+
+.form-selector .form-selector-input:disabled~.form-selector-label {
+    border-color: #d2d2d7
+}
+
+.form-selector-input:disabled~.form-selector-label {
+    opacity: .32;
+    cursor: auto
+}
+
+.form-selector-input.focused~.form-selector-label,
+.form-selector-input:checked~.form-selector-label,
+.form-selector-input:focus~.form-selector-label {
+    outline: none;
+    border-width: 2px;
+    padding: 14px
+}
+
+.form-selector-label {
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: normal;
+    font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border-width: 1px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: #1d1d1f;
+    border-color: #d2d2d7;
+    background-color: rgba(255, 255, 255, .8);
+}
+
 .cart-container .bag-items {
     list-style: none;
     margin: 71px 0 20px;
@@ -240,6 +354,10 @@ button {
     margin-bottom: 5px;
 }
 
+.summary .summary-container .summary-content.summary-shipping {
+    display: none;
+}
+
 .summary .summary-container .summary-content .summary-labelvalue {
     display: flex;
     justify-content: space-between;
@@ -291,8 +409,8 @@ button {
     font-size: 24px;
     line-height: 28px;
     font-weight: bold;
-    font-family: 
-    color: #1d1d1f;
+    font-family:
+        color: #1d1d1f;
 }
 
 .cart-button {
@@ -333,6 +451,25 @@ button {
     display: inline-block;
 }
 
+.customer {
+    margin-top: 41px;
+}
+
+.customer .customer-container {
+    margin-left: 25%;
+    flex-basis: 75%;
+    max-width: 75%;
+}
+
+.customer .customer-container .customer-content{
+    margin-bottom: 5px;
+}
+
+.customer .customer-container .customer-content .customer-labelinput{
+    display: flex;
+    justify-content: space-between;
+}
+
 @media only screen and (max-width: 1023px) and (max-device-width: 736px) {
     .cart-container {
         padding-top: 58px;
@@ -341,6 +478,7 @@ button {
         margin-right: auto;
         width: 87.5%;
     }
+
     .cart-container .cart-header .cart-header-text {
         font-size: 28px;
         line-height: 32px;
@@ -348,31 +486,46 @@ button {
         font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
         padding-bottom: 4px;
     }
+
+    .cart-container .cart-header .cart-header-message {
+        padding-top: 8px;
+    }
+
     .cart-container .bag-items {
         margin-top: 65px;
     }
+
     .cart-container .bag-items .bag-item .iteminfo {
         padding-bottom: 55px;
     }
+
+    .cart-container .bag-items .bag-item .iteminfo.last2 {
+        margin-bottom: 0;
+    }
+
     .cart-container .bag-items .bag-item .iteminfo .iteminfo-image {
         width: 100%;
         height: auto;
         flex-basis: 100%;
         max-width: 100%;
     }
+
     .cart-container .bag-items .bag-item .iteminfo .iteminfo-image img {
         float: none;
     }
+
     .cart-container .bag-items .bag-item .iteminfo .iteminfo-content {
         flex-basis: 100%;
         max-width: 100%;
     }
+
     .cart-container .bag-items .bag-item .iteminfo .iteminfo-content .iteminfo-detail .iteminfo-detail-title-wrapper {
         padding-right: 0px;
         flex-basis: 100%;
         max-width: 100%;
         margin-bottom: 10px;
     }
+
     .cart-container .bag-items .bag-item .iteminfo .iteminfo-content .iteminfo-detail .iteminfo-detail-title-wrapper .iteminfo-detail-title {
         font-size: 21px;
         line-height: 25px;
@@ -380,22 +533,27 @@ button {
         font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
         color: #1d1d1f;
     }
+
     .cart-container .bag-items .bag-item .iteminfo .iteminfo-content .iteminfo-detail .iteminfo-detail-quantity {
         width: 40%;
     }
+
     .cart-container .bag-items .bag-item .iteminfo .iteminfo-content .iteminfo-detail .iteminfo-detail-quantity .quantity {
         padding-left: 0;
         margin-top: -6px;
     }
+
     .cart-container .bag-items .bag-item .iteminfo .iteminfo-content .iteminfo-detail .iteminfo-detail-quantity .quantity .quantity-selector .quantity-wrapper .form-dropdown {
         font-size: 21px;
         line-height: 25px;
         font-weight: bold;
         font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
     }
+
     .cart-container .bag-items .bag-item .iteminfo .iteminfo-content .iteminfo-detail .iteminfo-detail-pricedetail {
         width: 60%;
     }
+
     .cart-container .bag-items .bag-item .iteminfo .iteminfo-content .iteminfo-detail .iteminfo-detail-pricedetail .iteminfo-detail-price {
         font-size: 21px;
         line-height: 25px;
@@ -405,14 +563,17 @@ button {
         padding-left: 10px;
         text-align: right;
     }
+
     .summary {
         margin-top: 12px;
     }
+
     .summary .summary-container {
         margin-left: 0;
         flex-basis: 100%;
         max-width: 100%;
     }
+
     .summary .summary-container .summary-content .summary-labelvalue .summary-label {
         padding-right: 10px;
         margin-bottom: 0;
@@ -422,6 +583,7 @@ button {
         padding-left: 10px;
         margin-bottom: 0;
     }
+
     .summary .summary-container .summary-total {
         margin-top: 13px;
         padding-top: 20px;
@@ -444,13 +606,21 @@ button {
         font-weight: bold;
         font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
     }
+
     .cart-button .cart-button-container {
         margin-left: 0;
         flex-basis: 100%;
         max-width: 100%;
     }
+
     .cart-button .cart-button-container .cart-button-wrapper {
         width: 100%;
         margin-top: 34px;
+    }
+
+    .customer .customer-container {
+        margin-left: 0;
+        flex-basis: 100%;
+        max-width: 100%;
     }
 }

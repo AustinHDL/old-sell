@@ -461,13 +461,172 @@ button {
     max-width: 75%;
 }
 
-.customer .customer-container .customer-content{
-    margin-bottom: 5px;
+.customer .customer-container .customer-content .customer-labelinput{
+    position: relative;
 }
 
-.customer .customer-container .customer-content .customer-labelinput{
-    display: flex;
-    justify-content: space-between;
+.customer .customer-container .customer-content .customer-labelinput .form-input{
+    color: #1d1d1f;
+    border-color: #d2d2d7;
+    background-color: hsla(0, 0%, 100%, .8);
+    text-overflow: ellipsis;
+}
+
+.customer .customer-container .customer-content .customer-labelinput .form-input textarea{
+    color: #1d1d1f;
+    background-color: initial;
+}
+
+.customer .customer-container .customer-content .customer-labelinput .form-input:disabled {
+    color: #86868b;
+    -webkit-text-fill-color: #86868b;
+    background-color: rgba(0, 0, 0, .02)
+}
+
+.customer .customer-container .customer-content .customer-labelinput .form-input:disabled textarea {
+    color: #86868b;
+    -webkit-text-fill-color: #86868b
+}
+
+.customer .customer-container .customer-content .customer-labelinput .form-input:focus {
+    border-color: #1d1d1f;
+}
+
+.customer .customer-container .customer-content .customer-labelinput .form-input::placeholder {
+    color: #6e6e73
+}
+
+.customer .customer-container .customer-content .customer-labelinput .form-input:not(:disabled).form-textbox-entered~.form-label,
+.customer .customer-container .customer-content .customer-labelinput .form-input:not(:disabled):focus~.form-label,
+.customer .customer-container .customer-content .customer-labelinput .form-input:not(:disabled):valid[required]~.form-label,
+.customer .customer-container .customer-content .customer-labelinput .form-input:not(:disabled)[placeholder]:not(:placeholder-shown)~.form-label,
+.customer .customer-container .customer-content .customer-labelinput .form-input:not(:disabled)[placeholder]:not([placeholder=" "])~.form-label {
+    color: #6e6e73
+}
+
+.customer .customer-container .customer-content .customer-labelinput.is-error .form-input:not(:focus) {
+    border-color: #e30000;
+    background-color: #fff2f4
+}
+
+.customer .customer-container .customer-content .customer-labelinput.is-error .form-input:not(:disabled).form-textbox-entered~.form-label,
+.customer .customer-container .customer-content .customer-labelinput.is-error .form-input:not(:disabled):focus~.form-label,
+.customer .customer-container .customer-content .customer-labelinput.is-error .form-input:not(:disabled):valid[required]~.form-label,
+.customer .customer-container .customer-content .customer-labelinput.is-error .form-input:not(:disabled)[placeholder]:not(:placeholder-shown)~.form-label,
+.customer .customer-container .customer-content .customer-labelinput.is-error .form-input:not(:disabled)[placeholder]:not([placeholder=" "])~.form-label,
+.customer .customer-container .customer-content .customer-labelinput.is-error .form-label {
+    color: #e30000
+}
+
+.form-input {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
+    width: 100%;
+    height: 56px;
+    border-radius: 12px;
+    border-width: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    padding: 18px 16px 0;
+    margin-bottom: 14px;
+    text-align: left;
+    -webkit-appearance: none;
+    appearance: none
+}
+
+.form-input.form-textbox-entered~.form-label,
+.form-input:focus~.form-label,
+.form-input:valid[required]~.form-label,
+.form-input[placeholder]:not(:placeholder-shown)~.form-label,
+.form-input[placeholder]:not([placeholder=" "])~.form-label {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: normal;
+    font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
+    top: 10px;
+}
+
+.form-input:focus {
+    box-shadow: 0 0 0 4px rgb(0 125 250 / 60%);
+    outline: none;
+}
+
+.is-error .form-input {
+    margin-bottom: 0
+}
+
+.form-label {
+    position: absolute;
+    pointer-events: none;
+    transition-timing-function: ease-in;
+    transition-duration: .125s;
+    top: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: calc(100% - 32px);
+    left: 17px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
+}
+
+.form-message-wrapper {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: normal;
+    font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
+    color: #e30000;
+    position: relative;
+    margin-top: 9px;
+    margin-bottom: 12px;
+    display: none;
+}
+
+.form-message-wrapper:after,
+.form-message-wrapper:before {
+    font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
+    color: inherit;
+    display: inline-block;
+    font-style: normal;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: 1;
+    text-decoration: underline;
+    position: relative;
+    z-index: 1;
+    alt: "";
+    text-decoration: none
+}
+
+.form-message-wrapper:before {
+    display: none
+}
+
+.form-message-wrapper:after,
+.form-message-wrapper:before {
+    content: "⚠"
+}
+
+.form-message-wrapper:before {
+    padding-right: 4.8px;
+    display: inline-block;
+    top: 0
+}
+
+.form-message-wrapper:after {
+    display: none
+}
+
+.form-message-wrapper:before {
+    padding-right: 3px;
+    top: 3px;
+}
+
+.is-error .form-message-wrapper {
+    display: flex
 }
 
 @media only screen and (max-width: 1023px) and (max-device-width: 736px) {

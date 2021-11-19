@@ -41,14 +41,14 @@
 	    if (subtotal < 0.01) {
 	        var total = subtotal + original;
 	        document.getElementById("total").innerHTML = "RM" + total.toFixed(2);
-	        document.getElementById("summary-total").innerHTML = "您订购的总价为" + total.toFixed(2) + "令吉。";
+	        document.getElementById("summary-total").innerHTML = "您的订单总价为" + total.toFixed(2) + "令吉。";
 	    } else if (subtotal > 39.99) { //买超过RM40
 	        var total = subtotal + original;
 	        document.getElementById("total").innerHTML = "RM" + total.toFixed(2);
-	        document.getElementById("summary-total").innerHTML = "您订购的总价为" + total.toFixed(2) + "令吉。";
+	        document.getElementById("summary-total").innerHTML = "您的订单总价为" + total.toFixed(2) + "令吉。";
 	    } else {
 	        var total = subtotal + pay;
 	        document.getElementById("total").innerHTML = "RM" + total.toFixed(2);
-	        document.getElementById("summary-total").innerHTML = "您订购的总价为" + total.toFixed(2) + "令吉。";
+	        document.getElementById("summary-total").innerHTML = "您的订单总价为" + total.toFixed(2) + "令吉。";
 	    };
 	}

@@ -151,11 +151,18 @@ button {
     color: #1d1d1f;
     height: 28px;
     margin-bottom: 0;
-    padding: 0 0 0 5 px;
+    padding: 0 5px;
     border: 0;
+    border-radius: 10px;
     display: inline-block;
     background-color: transparent;
-    width: 50px;
+    width: 60px;
+}
+
+.cart-container .bag-items .bag-item .iteminfo .iteminfo-content .iteminfo-detail .iteminfo-detail-quantity .quantity .quantity-selector .quantity-wrapper .form-dropdown:focus {
+    box-shadow: 0 0 0 4px rgb(0 125 250 / 60%);
+    outline: none;
+    border-color: #0071e3;
 }
 
 .cart-container .bag-items .bag-item .iteminfo .iteminfo-content .iteminfo-detail .iteminfo-detail-quantity .quantity .form-textbox {

@@ -78,25 +78,25 @@
 	    if (selfp.checked) {
 	        var total = subtotal;
 	        document.getElementById("total").innerHTML = "RM" + total.toFixed(2);
-	        document.getElementById("product-select-total").innerHTML = "<b>总数：RM" + total.toFixed(2) + "</b>";
+	        document.getElementById("product-select-total").innerHTML = "总数：RM" + total.toFixed(2);
 	        document.getElementById("summary-total").innerHTML = "您的订单总价为" + total.toFixed(2) + "令吉。";
 	        document.getElementById("summary-total").style.color = "#1d1d1f";
 	    } else if (send.checked && subtotal < 0.01) {
 	        var total = subtotal + original;
 	        document.getElementById("total").innerHTML = "RM" + total.toFixed(2);
-	        document.getElementById("product-select-total").innerHTML = "<b>总数：RM" + total.toFixed(2) + "</b>";
+	        document.getElementById("product-select-total").innerHTML = "总数：RM" + total.toFixed(2);
 	        document.getElementById("summary-total").innerHTML = "您的订单总价为" + total.toFixed(2) + "令吉。";
 	        document.getElementById("summary-total").style.color = "#1d1d1f";
 	    } else if (send.checked && subtotal > 39.99) {
 	        var total = subtotal + original;
 	        document.getElementById("total").innerHTML = "RM" + total.toFixed(2);
-	        document.getElementById("product-select-total").innerHTML = "<b>总数：RM" + total.toFixed(2) + "</b>";
+	        document.getElementById("product-select-total").innerHTML = "总数：RM" + total.toFixed(2);
 	        document.getElementById("summary-total").innerHTML = "您的订单总价为" + total.toFixed(2) + "令吉。";
 	        document.getElementById("summary-total").style.color = "#1d1d1f";
 	    } else {
 	        var total = subtotal + pay;
 	        document.getElementById("total").innerHTML = "RM" + total.toFixed(2);
-	        document.getElementById("product-select-total").innerHTML = "<b>总数：RM" + total.toFixed(2) + "</b>";
+	        document.getElementById("product-select-total").innerHTML = "总数：RM" + total.toFixed(2);
 	        document.getElementById("summary-total").innerHTML = "您的订单总价为" + total.toFixed(2) + "令吉。";
 	        document.getElementById("summary-total").style.color = "#1d1d1f";
 	    }

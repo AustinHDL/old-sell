@@ -281,7 +281,7 @@
                 <div class="customer-container">
                     <div class="customer-content">
                         <div class="customer-labelinput" id="text-box-1">
-                            <input type="text" name="姓名" class="form-input" id="name" onblur="myFill()" onkeyup="myGeB()" autocomplete="off" value>
+                            <input type="text" name="姓名" class="form-input" id="name" onblur="myFill()" onkeyup="myGeB()" onkeypress="return /[a-z]/i.test(event.key)" autocomplete="off" value>
                             <span class="form-label">姓名</span>
                             <div class="form-message-wrapper">
                                 <span class="form-message">姓名未填写。</span>
@@ -365,51 +365,51 @@ function myInfo() {
     var kee = document.getElementById('keep');
 
     if (sel.checked) {
-        document.getElementById("shipping-select").innerHTML = sel.name + "：" + sel.value;
+        document.getElementById("shipping-select").innerHTML = "<b>" + sel.name + "：</b>" + sel.value;
     } else if (kee.checked) {
-        document.getElementById("shipping-select").innerHTML = kee.name + "：" + kee.value;
+        document.getElementById("shipping-select").innerHTML = "<b>" + kee.name + "：</b>" + kee.value;
     } else {
-        document.getElementById("shipping-select").innerHTML = sel.name + "：" + "您还没进行选择！";
+        document.getElementById("shipping-select").innerHTML = "<b>" + sel.name + "：</b>" + "您还没进行选择！";
     }
 
     var bgqua = document.getElementById('bg-quantity');
     if (bgqua.value > 0) {
-        document.getElementById("product-select-bg").innerHTML = bgqua.name + "：" + bgqua.value + "包";
+        document.getElementById("product-select-bg").innerHTML = "<b>" + bgqua.name + "：</b>" + bgqua.value + "包";
     }
 
     var bg02qua = document.getElementById('bg02-quantity');
     if (bg02qua.value > 0) {
-        document.getElementById("product-select-bg02").innerHTML = bg02qua.name + "：" + bg02qua.value + "包";
+        document.getElementById("product-select-bg02").innerHTML = "<b>" + bg02qua.name + "：</b>" + bg02qua.value + "包";
     }
 
     var hjqua = document.getElementById('hj-quantity');
     if (hjqua.value > 0) {
-        document.getElementById("product-select-hj").innerHTML = hjqua.name + "：" + hjqua.value + "瓶";
+        document.getElementById("product-select-hj").innerHTML = "<b>" + hjqua.name + "：</b>" + hjqua.value + "瓶";
     }
 
     var hzqua = document.getElementById('hz-quantity');
     if (hzqua.value > 0) {
-        document.getElementById("product-select-hz").innerHTML = hzqua.name + "：" + hzqua.value + "包";
+        document.getElementById("product-select-hz").innerHTML = "<b>" + hzqua.name + "：</b>" + hzqua.value + "包";
     }
 
     var cname = document.getElementById('name');
     if (cname.value.length > 0) {
-        document.getElementById("customer-name").innerHTML = cname.name + "：" + cname.value;
+        document.getElementById("customer-name").innerHTML = "<b>" + cname.name + "：</b>" + cname.value;
     }
 
     var chpn = document.getElementById('hpnumber');
     if (chpn.value.length > 0) {
-        document.getElementById("customer-hp").innerHTML = chpn.name + "：" + chpn.value;
+        document.getElementById("customer-hp").innerHTML = "<b>" + chpn.name + "：</b>" + chpn.value;
     }
 
     var cadd = document.getElementById('address');
     if (cadd.value.length > 0) {
-        document.getElementById("customer-address").innerHTML = cadd.name + "：" + cadd.value;
+        document.getElementById("customer-address").innerHTML = "<b>" + cadd.name + "：</b>" + cadd.value;
     }
 
     var cdate = document.getElementById('date');
     if (cdate.value.length > 0) {
-        document.getElementById("customer-date").innerHTML = cdate.name + "：" + cdate.value;
+        document.getElementById("customer-date").innerHTML = "<b>" + cdate.name + "：</b>" + cdate.value;
     }
 
     document.getElementById("info").style.display = "block";
@@ -418,26 +418,5 @@ function myInfo() {
 </script>
 <script type="text/javascript" src="html2canvas.min.js"></script>
 <script type="text/javascript" src="html2canvas.js"></script>
-<script type="text/javascript">
-function screenshot() {
-
-    document.getElementById('btn').style.display = "none";
-    var htmlDom = document.getElementById('photo');
-    var scale = 1;
-
-    html2canvas(htmlDom, {
-        dpi: window.devicePixelRatio * 1,
-        scale: scale,
-        logging: false,
-        useCORS: true
-    }).then(canvas => {
-        let link = document.createElement("a");
-        link.href = canvas.toDataURL(); //下载链接
-        link.setAttribute("download", "订单.png");
-        link.style.display = "none"; //a标签隐藏
-        document.body.appendChild(link);
-        link.click();
-    });
-}
-</script>
+<script type="text/javascript" src="screenshot.js"></script>
 </html>

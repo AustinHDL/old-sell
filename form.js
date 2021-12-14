@@ -43,11 +43,11 @@ function myFill4() {
     var date = document.getElementById("date");
     var datebox = document.getElementById("text-box-4");
     if (date.value.length > 0) {
+        date.classList.add("form-textbox-entered");
         datebox.classList.remove("is-error");
-
     } else {
+        date.classList.remove("form-textbox-entered");
         datebox.classList.add("is-error");
-
     }
 }
 

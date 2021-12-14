@@ -27,14 +27,15 @@ function myFill2() {
 function myFill3() {
     var addr = document.getElementById("address");
     var addrbox = document.getElementById("text-box-3");
+    var selfp = document.getElementById("self");
     if (addr.value.length > 0) {
         addr.classList.add("form-textbox-entered");
         addrbox.classList.remove("is-error");
-
+        selfp.disabled = true; //如果地址栏有字 不能选择自取
     } else {
         addr.classList.remove("form-textbox-entered");
         addrbox.classList.add("is-error");
-
+        selfp.disabled = false;
     }
 }
 
@@ -47,6 +48,19 @@ function myFill4() {
     } else {
         datebox.classList.add("is-error");
 
+    }
+}
+
+function myFill5() {
+    var pickup = document.getElementById("pickup");
+    var pickupbox = document.getElementById("text-box-5");
+    var send = document.getElementById("keep");//送货上门
+    if (pickup.value.length > 0) {
+        pickupbox.classList.remove("is-error");
+        send.disabled = true;//如果取货地点被选择，不能选择送货上门
+    } else {
+        pickupbox.classList.add("is-error");
+        send.disabled = false;
     }
 }
 

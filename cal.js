@@ -5,6 +5,7 @@
 	    if (selfp.checked) {
 	        document.getElementById("summary-shipping").style.display = "none";
 	        document.getElementById("address-box").style.display = "none";
+	        document.getElementById("pick-box").style.display = "block";
 	        document.getElementById("select-cover-1").removeAttribute("onclick");
 	        document.getElementById("select-cover-2").removeAttribute("onclick");
 	        document.getElementById("bg-quantity").disabled = false;
@@ -12,6 +13,7 @@
 	    } else if (send.checked) {
 	        document.getElementById("summary-shipping").style.display = "block";
 	        document.getElementById("address-box").style.display = "block";
+	        document.getElementById("pick-box").style.display = "none";
 	        document.getElementById("select-cover-1").removeAttribute("onclick");
 	        document.getElementById("select-cover-2").removeAttribute("onclick");
 	        document.getElementById("bg-quantity").disabled = false;
@@ -19,6 +21,7 @@
 	    } else {
 	        document.getElementById("summary-shipping").style.display = "none";
 	        document.getElementById("address-box").style.display = "block";
+	        document.getElementById("pick-box").style.display = "block";
 	        document.getElementById("bg-quantity").disabled = true;
 	        document.getElementById("hj-quantity").disabled = true;
 	    }

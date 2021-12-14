@@ -226,6 +226,19 @@
                             </div>
                         </div>
                     </div>
+                    <div class="customer-content" id="pick-box">
+                        <div class="customer-labelinput" id="text-box-5">
+                            <select name="取货地点" class="form-input" id="pickup" onchange="myFill5()" autocomplete="off" required>
+                                <option value=""></option>
+                                <option value="华利（诗巫）超市">华利（诗巫）超市</option>
+                                <option value="美丹（诗巫）超市">美丹（诗巫）超市</option>
+                            </select>
+                            <label for="pickup" class="form-label">取货地点</label>
+                            <div class="form-message-wrapper">
+                                <span class="form-message">取货地点未选择。</span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="customer-content">
                         <div class="customer-labelinput" id="text-box-4">
                             <input type="date" name="取货日期" class="form-input form-textbox-entered" id="date" onblur="myFill4()" onkeyup="myGeB()" autocomplete="off" value>
@@ -239,7 +252,7 @@
             </div>
             <div class="cart-button">
                 <div class="cart-button-container">
-                    <div class="cart-button-wrapper">
+                    <div class="cart-button-wrapper" id="checkinfo" onclick="myCheck2()">
                         <button class="form-button" id="form-button" type="button" onclick="myInfo()" disabled>
                             <span>
                                 生成订单
@@ -259,6 +272,7 @@
                                 <div id="customer-name"></div>
                                 <div id="customer-hp"></div>
                                 <div id="customer-address"></div>
+                                <div id="customer-pickup"></div>
                                 <div id="customer-date"></div>
                                 <br>
                                 <div id="shipping-select"></div>
@@ -315,6 +329,11 @@ function myInfo() {
     var cadd = document.getElementById('address');
     if (cadd.value.length > 0) {
         document.getElementById("customer-address").innerHTML = "<b>" + cadd.name + "：</b>" + cadd.value;
+    }
+
+    var cpicku = document.getElementById('pickup');
+    if (cpicku.value.length > 0) {
+        document.getElementById("customer-pickup").innerHTML = "<b>" + cpicku.name + "：</b>" + cpicku.value;
     }
 
     var cdate = document.getElementById('date');

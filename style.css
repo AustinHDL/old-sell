@@ -703,7 +703,17 @@ button {
     text-align: right;
 }
 
-@media only screen and (max-width: 1023px) and (max-device-width: 736px) {
+@media only screen and (max-width: 980px){
+    .cart-container {
+        padding-top: 58px;
+        margin-bottom: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 87.5%;
+    }
+}
+
+@media only screen and (max-width: 736px) {
     .cart-container {
         padding-top: 58px;
         margin-bottom: 80px;

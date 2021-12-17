@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>订购页面</title>
+    <link rel="stylesheet" type="text/css" href="order.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="cart-container">
+            <div class="cart-header">
+                <h1 class="cart-header-text" id="summary-total">
+                    欢迎
+                </h1>
+                <div class="cart-header-message">
+                    物流选项
+                </div>
+                <div class="cart-shipping-button">
+                    <div class="cart-shipping-button-container">
+                        <div class="cart-shipping-button-wrapper">
+                            <fieldset>
+                                <div class="buyflow-selector-group">
+                                    <div class="form-selector large-1">
+                                        <input class="form-selector-input" type="radio" name="物流选项" value="自取" id="self" onclick="myFunction()">
+                                        <label class="form-selector-label" for="self">
+                                            <span>
+                                                自取
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="form-selector large-1">
+                                        <input class="form-selector-input" type="radio" name="物流选项" value="送货上门" id="keep" onclick="myFunction()">
+                                        <label class="form-selector-label" for="keep">
+                                            <span>
+                                                送货上门
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ol class="bag-items">
+                <li class="bag-item">
+                    <div class="iteminfo">
+                        <div class="iteminfo-image">
+                            <img width="400" height="400" src="Images/01.jpg">
+                        </div>
+                        <div class="iteminfo-content">
+                            <div class="iteminfo-detail">
+                                <div class="iteminfo-detail-title-wrapper">
+                                    <h2 class="iteminfo-detail-title">
+                                        <span>
+                                            白粿一包（五片）
+                                        </span>
+                                    </h2>
+                                </div>
+                                <div class="iteminfo-detail-quantity">
+                                    <div class="quantity">
+                                        <div class="quantity-selector">
+                                            <div class="quantity-wrapper" id="select-cover-1" onclick="myCheck()">
+                                                <select name="白粿一包（五片）" class="form-dropdown" id="bg-quantity" onchange="myFunction()" required disabled>
+                                                    <option value="0">0</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                    <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                    <option value="16">16</option>
+                                                    <option value="17">17</option>
+                                                    <option value="18">18</option>
+                                                    <option value="19">19</option>
+                                                    <option value="20">20</option>
+                                                    <option value="11">21</option>
+                                                    <option value="12">22</option>
+                                                    <option value="13">23</option>
+                                                    <option value="14">24</option>
+                                                    <option value="15">25</option>
+                                                    <option value="16">26</option>
+                                                    <option value="17">27</option>
+                                                    <option value="18">28</option>
+                                                    <option value="19">29</option>
+                                                    <option value="20">30</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="iteminfo-detail-pricedetail">
+                                    <div class="iteminfo-detail-price">
+                                        <span id="bg-totalprice">RM0.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="bag-item">
+                    <div class="iteminfo last2" id="iteminfo">
+                        <div class="iteminfo-image">
+                            <img width="400" height="400" src="Images/02.jpg">
+                        </div>
+                        <div class="iteminfo-content">
+                            <div class="iteminfo-detail">
+                                <div class="iteminfo-detail-title-wrapper">
+                                    <h2 class="iteminfo-detail-title">
+                                        <span>
+                                            米红酒
+                                        </span>
+                                    </h2>
+                                </div>
+                                <div class="iteminfo-detail-quantity">
+                                    <div class="quantity">
+                                        <div class="quantity-selector">
+                                            <div class="quantity-wrapper" id="select-cover-2" onclick="myCheck()">
+                                                <select name="米红酒" class="form-dropdown" id="hj-quantity" onchange="myFunction()" required disabled>
+                                                    <option value="0">0</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                    <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                    <option value="16">16</option>
+                                                    <option value="17">17</option>
+                                                    <option value="18">18</option>
+                                                    <option value="19">19</option>
+                                                    <option value="20">20</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="iteminfo-detail-pricedetail">
+                                    <div class="iteminfo-detail-price">
+                                        <span id="hj-totalprice">RM0.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+            <div class="summary">
+                <div class="summary-container">
+                    <div class="summary-content summary-subtotal">
+                        <div class="summary-labelvalue">
+                            <div class="summary-label">
+                                小计
+                            </div>
+                            <div class="summary-value" id="subtotal">
+                                RM0.00
+                            </div>
+                        </div>
+                    </div>
+                    <div class="summary-content summary-shipping" id="summary-shipping">
+                        <div class="summary-labelvalue">
+                            <div class="summary-label">
+                                运输费
+                            </div>
+                            <div class="summary-value" id="shipping">
+                                RM0.00
+                            </div>
+                        </div>
+                    </div>
+                    <div class="summary-total">
+                        <div class="summary-label">
+                            总数
+                        </div>
+                        <div class="summary-value" id="total">
+                            RM0.00
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="customer" id="customer">
+                <div class="customer-container">
+                    <div class="customer-content">
+                        <div class="customer-labelinput" id="text-box-1">
+                            <input type="text" name="姓名" class="form-input" id="name" onblur="myFill()" onkeyup="myGeB()" onkeypress="return /[a-z]/i.test(event.key)" autocomplete="off" value>
+                            <span class="form-label">姓名</span>
+                            <div class="form-message-wrapper">
+                                <span class="form-message">姓名未填写。</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customer-content">
+                        <div class="customer-labelinput" id="text-box-2">
+                            <input type="number" name="手机号码" class="form-input" id="hpnumber" onblur="myFill2()" onkeyup="myGeB()" autocomplete="off" maxlength="11" value>
+                            <span class="form-label">手机号码</span>
+                            <div class="form-message-wrapper">
+                                <span class="form-message">手机号码未填写。</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customer-content" id="address-box">
+                        <div class="customer-labelinput" id="text-box-3">
+                            <input type="text" name="地址" class="form-input" id="address" onblur="myFill3()" autocomplete="off" value>
+                            <span class="form-label">地址</span>
+                            <div class="form-message-wrapper">
+                                <span class="form-message">地址未填写。</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customer-content" id="pick-box">
+                        <div class="customer-labelinput" id="text-box-5">
+                            <select name="取货地点" class="form-input" id="pickup" onchange="myFill5()" autocomplete="off" required>
+                                <option value=""></option>
+                                <option value="华利（诗巫）超市">华利（诗巫）超市</option>
+                                <option value="美丹（诗巫）超市">美丹（诗巫）超市</option>
+                            </select>
+                            <label for="pickup" class="form-label">取货地点</label>
+                            <div class="form-message-wrapper">
+                                <span class="form-message">取货地点未选择。</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customer-content">
+                        <div class="customer-labelinput" id="text-box-4">
+                            <input type="date" name="取货日期" class="form-input form-textbox-entered" id="date" onblur="myFill4()" onkeyup="myGeB()" autocomplete="off" value>
+                            <span class="form-label">取货日期</span>
+                            <div class="form-message-wrapper">
+                                <span class="form-message">取货日期未填写。</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-button">
+                <div class="cart-button-container">
+                    <div class="cart-button-wrapper" id="checkinfo" onclick="myCheck2()">
+                        <button class="form-button" id="form-button" type="button" onclick="myInfo()" disabled>
+                            <span>
+                                生成订单
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="info" id="info">
+                <div class="info-container">
+                    <div class="info-wrapper">
+                        <div class="content" id="photo">
+                            <div class="content-box">
+                                <div class="title">
+                                    订单
+                                </div>
+                                <div id="customer-name"></div>
+                                <div id="customer-hp"></div>
+                                <div id="customer-address"></div>
+                                <div id="customer-pickup"></div>
+                                <div id="customer-date"></div>
+                                <br>
+                                <div id="shipping-select"></div>
+                                <div id="product-select-bg"></div>
+                                <div id="product-select-bg02"></div>
+                                <div id="product-select-hj"></div>
+                                <div id="product-select-hz"></div>
+                                <br>
+                                <div id="product-select-total"></div>
+                                <button onclick="screenshot()" class="btn" id="btn">生成图片</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script type="text/javascript" src="cal.js"></script>
+<script type="text/javascript" src="form.js"></script>
+<script type="text/javascript">
+function myInfo() {
+    var sel = document.getElementById('self');
+    var kee = document.getElementById('keep');
+
+    if (sel.checked) {
+        document.getElementById("shipping-select").innerHTML = "<b>" + sel.name + "：</b>" + sel.value;
+    } else if (kee.checked) {
+        document.getElementById("shipping-select").innerHTML = "<b>" + kee.name + "：</b>" + kee.value;
+    } else {
+        document.getElementById("shipping-select").innerHTML = "<b>" + sel.name + "：</b>" + "您还没进行选择！";
+    }
+
+    var bgqua = document.getElementById('bg-quantity');
+    if (bgqua.value > 0) {
+        document.getElementById("product-select-bg").innerHTML = "<b>" + bgqua.name + "：</b>" + bgqua.value + "包";
+    }
+
+    var hjqua = document.getElementById('hj-quantity');
+    if (hjqua.value > 0) {
+        document.getElementById("product-select-hj").innerHTML = "<b>" + hjqua.name + "：</b>" + hjqua.value + "瓶";
+    }
+
+    var cname = document.getElementById('name');
+    if (cname.value.length > 0) {
+        document.getElementById("customer-name").innerHTML = "<b>" + cname.name + "：</b>" + cname.value;
+    }
+
+    var chpn = document.getElementById('hpnumber');
+    if (chpn.value.length > 0) {
+        document.getElementById("customer-hp").innerHTML = "<b>" + chpn.name + "：</b>" + chpn.value;
+    }
+
+    var cadd = document.getElementById('address');
+    if (cadd.value.length > 0) {
+        document.getElementById("customer-address").innerHTML = "<b>" + cadd.name + "：</b>" + cadd.value;
+    }
+
+    var cpicku = document.getElementById('pickup');
+    if (cpicku.value.length > 0) {
+        document.getElementById("customer-pickup").innerHTML = "<b>" + cpicku.name + "：</b>" + cpicku.value;
+    }
+
+    var cdate = document.getElementById('date');
+    if (cdate.value.length > 0) {
+        document.getElementById("customer-date").innerHTML = "<b>" + cdate.name + "：</b>" + cdate.value;
+    }
+
+    document.getElementById("info").style.display = "block";
+    document.getElementById('btn').style.display = "block";
+}
+</script>
+<script type="text/javascript" src="html2canvas.min.js"></script>
+<script type="text/javascript" src="html2canvas.js"></script>
+<script type="text/javascript" src="screenshot.js"></script>
+
+</html>

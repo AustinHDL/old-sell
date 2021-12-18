@@ -37,7 +37,7 @@ button {
 }
 
 .cart-container {
-    padding: 50px 22px 0 22px;
+    padding: 80px 22px 0 22px;
     margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
@@ -872,5 +872,200 @@ button {
     .info .info-container .info-wrapper {
         margin-top: 20px;
         width: 100%;
+    }
+}
+
+/* Banner */
+#banner, #banner:before, #banner:after, #banner *, #banner *:before, #banner *:after {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    pointer-events: auto;
+    letter-spacing: normal;
+}
+
+#banner{
+    font-weight: normal;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 52px;
+    z-index: 9997;
+    margin-bottom: -52px;
+}
+
+#banner.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+#banner .banner-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 767px){
+    #banner {
+        margin-bottom: -48px;
+        height: 48px;
+    }
+}
+
+/* Banner - Background */
+#banner .banner-background{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    -webkit-transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+    transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+}
+
+#banner.banner-area .banner-background{
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    background-color: rgba(255,255,255,0.72);
+}
+
+#banner .banner-background:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    height: 1px;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.16);
+}
+
+#banner.banner-area .banner-background:after {
+    margin-left: 0;
+    left: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px){
+    #banner .banner-background {
+        min-height: 48px;
+        -webkit-transition: background-color 0.5s ease 0.7s;
+        transition: background-color 0.5s ease 0.7s;
+    }
+}
+
+/* Banner - Content */
+#banner .banner-content{
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 0 22px;
+    position: relative;
+    z-index: 2;
+}
+
+#banner .banner-content a{
+    text-decoration: none;
+}
+
+#banner .banner-content::before, #banner .banner-content::after {
+    content: ' ';
+    display: table;
+}
+
+#banner .banner-title{
+    font-size: 21px;
+    line-height: 24px;
+    font-weight: bold;
+    font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
+    cursor: default;
+    display: block;
+    float: left;
+    margin: 14px 0 -14px;
+    padding: 0;
+    height: 52px;
+    white-space: nowrap;
+}
+
+#banner .banner-title, #banner .banner-title a {
+    color: #6667AA;
+    -webkit-transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+    transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+}
+
+#banner .banner-title a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    letter-spacing: inherit;
+    line-height: inherit;
+    margin: 0;
+    text-decoration: none;
+    white-space: nowrap;
+    opacity: .92;
+    pointer-events: none;
+}
+
+#banner .banner-action{
+    float: right;
+}
+
+#banner .banner-action-button .banner-button {
+    margin-top: 14px;
+}
+
+#banner .banner-button {
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    background: #F4D782;
+    color: #214E6D;
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: normal;
+    font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
+    min-width: 23px;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 12px;
+}
+
+@media only screen and (max-width: 1023px){
+    #banner .banner-content {
+        border-bottom: none;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #banner .banner-content {
+        padding: 0 16px;
+    }
+    #banner .banner-title {
+        font-size: 19px;
+        line-height: 24px;
+        font-weight: bold;
+        font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
+        display: inline-block;
+        margin: 12px 0 -12px;
+        height: 48px;
+    }
+    #banner .banner-action-button{
+        margin-left: 17px;
+        margin-top: -3px;
     }
 }

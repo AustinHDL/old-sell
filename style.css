@@ -507,7 +507,10 @@ p+*{
 }
 
 .footnote-number{
+    position: relative;
+    font-feature-settings: "frac";
     font-size: 24px;
+    top: auto;
     font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
     font-weight: normal;
 }
@@ -515,7 +518,8 @@ p+*{
 .footnote-number a {
     font-feature-settings: "frac";
     text-decoration: none;
-
+    vertical-align: inherit;
+    color: #6667AA;
 }
 
 @media only screen and (max-width: 767px){
@@ -526,6 +530,8 @@ p+*{
 
 .title-remark {
     color: #6667AA;
+    font-size: 19px;
+    vertical-align: initial;
     font-feature-settings: "frac";
     position: relative;
     display: inline;

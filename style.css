@@ -511,12 +511,19 @@ p+*{
     vertical-align: initial;
     font-feature-settings: "numr";
     font-size: 24px;
+    font-weight: normal;
     top: auto;
 }
 
 .footnote-number a {
     vertical-align: inherit;
     color: inherit;
+}
+
+@media only screen and (max-width: 767px){
+    .footnote-number{
+        font-size: 19px;
+    }
 }
 
 .title-remark {
@@ -526,6 +533,7 @@ p+*{
     font-feature-settings: "numr";
     position: relative;
     display: inline;
+    font-weight: normal;
 }
 
 .footer-section {

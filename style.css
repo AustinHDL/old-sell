@@ -520,6 +520,9 @@ p+*{
 
 .footnote-number a {
     font-feature-settings: "frac";
+    font-variant-numeric: diagonal-fractions;
+    -moz-font-feature-settings: "frac";
+    -webkit-font-feature-settings: "frac";
     text-decoration: none;
     vertical-align: inherit;
     color: #6667AA;

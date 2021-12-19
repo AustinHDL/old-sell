@@ -509,17 +509,18 @@ p+*{
 .footnote-number{
     position: relative;
     vertical-align: initial;
-    font-feature-settings: "frac";
+    font-feature-settings: "numr";
     font-size: 24px;
-    font-weight: normal;
     top: auto;
+    font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
+    font-weight: normal;
 }
 
 .footnote-number a {
+    letter-spacing: inherit;
+    text-decoration: none;
     vertical-align: inherit;
     color: inherit;
-    font-feature-settings: "frac";
-    font-weight: normal;
 }
 
 @media only screen and (max-width: 767px){
@@ -532,7 +533,7 @@ p+*{
     color: #6667AA;
     font-size: 19px;
     vertical-align: initial;
-    font-feature-settings: "frac";
+    font-feature-settings: "numr";
     position: relative;
     display: inline;
     font-weight: normal;

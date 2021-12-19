@@ -509,6 +509,9 @@ p+*{
 .footnote-number{
     position: relative;
     font-feature-settings: "frac";
+    font-variant-numeric: diagonal-fractions;
+    -moz-font-feature-settings: "frac";
+    -webkit-font-feature-settings: "frac";
     font-size: 24px;
     top: auto;
     font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
@@ -532,6 +535,9 @@ p+*{
     color: #6667AA;
     font-size: 19px;
     vertical-align: initial;
+    font-variant-numeric: diagonal-fractions;
+    -moz-font-feature-settings: "frac";
+    -webkit-font-feature-settings: "frac";
     font-feature-settings: "frac";
     position: relative;
     display: inline;

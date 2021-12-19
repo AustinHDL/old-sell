@@ -507,44 +507,49 @@ p+*{
 }
 
 .footnote-number{
-    position: relative;
-    font-feature-settings: "frac";
-    font-variant-numeric: diagonal-fractions;
-    -moz-font-feature-settings: "frac";
-    -webkit-font-feature-settings: "frac";
+    font-style: normal;
+    color: #6667AA;
+    direction: ltr;
+    text-align: left;
     font-size: 24px;
-    top: auto;
-    font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
+    line-height: 40px;
     font-weight: normal;
+    font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
+    position: relative;
+    vertical-align: initial;
+    -moz-font-feature-settings: "numr";
+    -webkit-font-feature-settings: "numr";
+    font-feature-settings: "numr";
+    top: auto;
 }
 
 .footnote-number a {
-    font-feature-settings: "frac";
-    font-variant-numeric: diagonal-fractions;
-    -moz-font-feature-settings: "frac";
-    -webkit-font-feature-settings: "frac";
     text-decoration: none;
     vertical-align: inherit;
-    color: #6667AA;
+    color: inherit;
 }
 
 @media only screen and (max-width: 767px){
     .footnote-number{
         font-size: 19px;
+        line-height: 32px;
     }
 }
 
 .title-remark {
     color: #6667AA;
     font-size: 19px;
+    line-height: 32px;
     vertical-align: initial;
-    font-variant-numeric: diagonal-fractions;
-    -moz-font-feature-settings: "frac";
-    -webkit-font-feature-settings: "frac";
-    font-feature-settings: "frac";
+    -moz-font-feature-settings: "numr";
+    -webkit-font-feature-settings: "numr";
+    font-feature-settings: "numr";
     position: relative;
     display: inline;
     font-weight: normal;
+    font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
+    top: auto;
+    text-decoration: none;
 }
 
 .footer-section {

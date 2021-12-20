@@ -831,6 +831,7 @@ button#two.current~.core-gallery-scroller {
     transition: background-color .66s cubic-bezier(0.66, 0, 0.01, 1) .66s, color .66s cubic-bezier(0.66, 0, 0.01, 1) .66s, transform .66s cubic-bezier(0.66, 0, 0.2, 1), opacity 100ms linear;
     color: #fff;
     background-color: rgba(134, 134, 139, .4);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
     width: 40px;
     height: 40px;

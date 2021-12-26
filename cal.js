@@ -44,7 +44,7 @@
 	    document.getElementById("hj-totalprice").innerHTML = "RM" + hjtotal.toFixed(2);
 
 		//年糕
-	    var ngprice = 4; //RM15
+	    var ngprice = 3; //RM3
 	    var ngquantity = document.getElementById("ng-quantity").value;
 	    var ngtotal = ngprice * ngquantity;
 	    document.getElementById("ng-totalprice").innerHTML = "RM" + ngtotal.toFixed(2);

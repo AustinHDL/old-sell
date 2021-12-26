@@ -9,40 +9,52 @@
 </head>
 
 <body>
+    <!-- 商品选择栏 -->
     <nav id="nav">
         <div class="nav-wrapper">
             <ul class="nav-items" id="nav-items">
+                <!-- 白粿 -->
                 <li class="nav-item baiguo">
                     <a class="nav-link" href="#" onclick="openEventP(event, 'BG')" id="DOpen">
                         <figure class="nav-icon"></figure>
                         <span class="nav-label">白粿</span>
-                        <span class="nav-new">新</span>
                     </a>
                 </li>
+                <!-- 米红酒 -->
                 <li class="nav-item drinks">
                     <a class="nav-link" href="#" onclick="openEventP(event, 'HJ')" id="two">
                         <figure class="nav-icon"></figure>
                         <span class="nav-label">米红酒</span>
+                    </a>
+                </li>
+                <!-- 糖年糕 -->
+                <li class="nav-item niangao">
+                    <a class="nav-link" href="#" onclick="openEventP(event, 'NG')" id="three">
+                        <figure class="nav-icon"></figure>
+                        <span class="nav-label">糖年糕</span>
                         <span class="nav-new">新</span>
                     </a>
                 </li>
             </ul>
+            <!-- 左右按键 -->
             <div class="nav-paddles">
                 <button class="nav-paddle left" id="nav-paddle-left" onclick="scrollToLeft()" disabled></button>
                 <button class="nav-paddle right" id="nav-paddle-right" onclick="scrollToRight()" disabled></button>
             </div>
         </div>
     </nav>
-    <!-- 白粿 -->
+    <!-- 白粿-内容 -->
     <div id="BG" class="links-content">
-        <!-- Banner -->
+        <!-- 横幅 -->
         <nav id="banner" class="banner-area sticky">
             <div class="banner-wrapper">
                 <div class="banner-background"></div>
                 <div class="banner-content">
+                    <!-- 标题 -->
                     <div class="banner-title">
                         <a href="#">白粿</a>
                     </div>
+                    <!-- 链接按键 -->
                     <div class="banner-action banner-action-button">
                         <a class="banner-button" href="order.html">订购</a>
                     </div>
@@ -52,12 +64,15 @@
         <!-- 内容 -->
         <div class="content-container">
             <div class="content-section">
+                <!-- 示意图 -->
                 <div class="image-container">
                     <picture class="image-hero">
-                        <img src="Images/Home/baiguo-background.jpg">
+                        <img src="Images/Home/baiguo-background-03.jpg">
                     </picture>
                 </div>
+                <!-- 图片展示 -->
                 <div class="inline-gallery">
+                    <!-- 底部数量 -->
                     <div class="gallery-dotnav dotnav">
                         <ul class="tablist">
                             <li class="presentation">
@@ -68,6 +83,7 @@
                             </li>
                         </ul>
                     </div>
+                    <!-- 展示区 -->
                     <div class="core-gallery">
                         <div class="core-gallery-scroller">
                             <div class="core-gallery-item">
@@ -76,6 +92,7 @@
                             <div class="core-gallery-item">
                                 <img src="Images/Home/02.jpg" class="gallery-image">
                             </div>
+                            <!-- 左右按键 -->
                             <div class="gallery-button-wrapper">
                                 <label class="button-wrapper bright" onclick="NPimage(1)">
                                     <span class="image-button">
@@ -95,6 +112,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- 价格 -->
                 <div class="specs-section">
                     <div class="specs-row">
                         <div class="specs-rowheader">
@@ -108,6 +126,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- 尺寸和重量 -->
                 <div class="specs-section section-m">
                     <div class="specs-row">
                         <div class="specs-rowheader">
@@ -144,6 +163,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- 包装内容 -->
                 <div class="specs-section section-m">
                     <div class="specs-row">
                         <div class="specs-rowheader">包装内含</div>
@@ -154,6 +174,7 @@
                 </div>
             </div>
         </div>
+        <!-- 保质期 -->
         <div class="important-section content-container">
             <div class="content-section">
                 <div class="specs-section">
@@ -173,6 +194,7 @@
         </div>
         <div class="footer-section content-container">
             <div class="content-section">
+                <!-- 服务 -->
                 <section class="buystrip">
                     <div class="buystrip-info">
                         <div class="buystrip-info-column">
@@ -200,6 +222,7 @@
                         </div>
                     </div>
                 </section>
+                <!-- 备注 -->
                 <section class="remark">
                     <ol>
                         <li id="remark-1">
@@ -221,14 +244,16 @@
     </div>
     <!-- 米红酒 -->
     <div id="HJ" class="links-content">
-        <!-- Banner -->
+        <!-- 横幅 -->
         <nav id="banner" class="banner-area sticky">
             <div class="banner-wrapper">
                 <div class="banner-background"></div>
                 <div class="banner-content">
+                    <!-- 标题 -->
                     <div class="banner-title">
                         <a href="#">米红酒</a>
                     </div>
+                    <!-- 链接 -->
                     <div class="banner-action banner-action-button">
                         <a class="banner-button" href="order.html">订购</a>
                     </div>
@@ -238,11 +263,13 @@
         <!-- 内容 -->
         <div class="content-container">
             <div class="content-section">
+                <!-- 示意图 -->
                 <div class="image-container">
                     <picture class="image-hero">
-                        <img src="Images/Home/drinks-background.jpg">
+                        <img src="Images/Home/hongjiu-background-02.jpg">
                     </picture>
                 </div>
+                <!-- 价格 -->
                 <div class="specs-section">
                     <div class="specs-row">
                         <div class="specs-rowheader">
@@ -256,6 +283,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- 尺寸和重量 -->
                 <div class="specs-section section-m">
                     <div class="specs-row">
                         <div class="specs-rowheader">
@@ -302,6 +330,7 @@
                 </div>
             </div>
         </div>
+        <!-- 保存 -->
         <div class="important-section content-container">
             <div class="content-section">
                 <div class="specs-section">
@@ -318,6 +347,7 @@
         </div>
         <div class="footer-section content-container">
             <div class="content-section">
+                <!-- 服务 -->
                 <section class="buystrip">
                     <div class="buystrip-info">
                         <div class="buystrip-info-column">
@@ -345,6 +375,7 @@
                         </div>
                     </div>
                 </section>
+                <!-- 备注 -->
                 <section class="remark">
                     <ol>
                         <li id="remark-5">
@@ -361,88 +392,156 @@
             </div>
         </div>
     </div>
+    <!-- 糖年糕-内容 -->
+    <div id="NG" class="links-content">
+        <!-- 横幅 -->
+        <nav id="banner" class="banner-area sticky">
+            <div class="banner-wrapper">
+                <div class="banner-background"></div>
+                <div class="banner-content">
+                    <!-- 标题 -->
+                    <div class="banner-title">
+                        <a href="#">糖年糕</a>
+                    </div>
+                    <!-- 链接按键 -->
+                    <div class="banner-action banner-action-button">
+                        <a class="banner-button" href="order.html">订购</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- 内容 -->
+        <div class="content-container">
+            <div class="content-section">
+                <!-- 示意图 -->
+                <div class="image-container">
+                    <picture class="image-hero">
+                        <img src="Images/Home/niangao-background-02.jpg">
+                    </picture>
+                </div>
+                <!-- 价格 -->
+                <div class="specs-section">
+                    <div class="specs-row">
+                        <div class="specs-rowheader">
+                            价格
+                            <sup class="footnote-number">
+                                <a href="#remark-8">1</a>
+                            </sup>
+                        </div>
+                        <div class="specs-column">
+                            <span>RM 4</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 尺寸和重量 -->
+                <div class="specs-section section-m">
+                    <div class="specs-row">
+                        <div class="specs-rowheader">
+                            尺寸和重量
+                            <sup class="footnote-number">
+                                <a href="#remark-9">2</a>
+                            </sup>
+                        </div>
+                        <div class="specs-column">
+                            <p>
+                                <strong>
+                                    高度：
+                                </strong>
+                                <span>
+                                    2.5厘米
+                                </span>
+                            </p>
+                            <p>
+                                <strong>
+                                    直径：
+                                </strong>
+                                <span>
+                                    9.5厘米
+                                </span>
+                            </p>
+                            <p>
+                                <strong>
+                                    重量：
+                                </strong>
+                                <span>
+                                    0.2千克
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 保存 -->
+        <div class="important-section content-container">
+            <div class="content-section">
+                <div class="specs-section">
+                    <div class="specs-row">
+                        <div class="specs-rowheader">
+                            保质期
+                            <sup class="footnote-number">
+                                <a href="#remark-10">3</a>
+                            </sup>
+                        </div>
+                        <div class="specs-column">
+                            <span>五至七天</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-section content-container">
+            <div class="content-section">
+                <!-- 服务 -->
+                <section class="buystrip">
+                    <div class="buystrip-info">
+                        <div class="buystrip-info-column">
+                            <div class="buystrip-info-content">
+                                <a href="#" class="block">
+                                    <figure class="buystrip-info-icon delivery"></figure>
+                                    <h3 class="buystrip-info-title">
+                                        超市取货或送货上门
+                                        <sup class="footnote-number">
+                                            <a class="title-remark" href="#remark-11">4</a>
+                                        </sup>
+                                    </h3>
+                                    <p class="buystrip-info-copy">前往指定超市提取货物，或选择免费送货服务。</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="buystrip-info-column">
+                            <div class="buystrip-info-content">
+                                <a href="#" class="block">
+                                    <figure class="buystrip-info-icon help"></figure>
+                                    <h3 class="buystrip-info-title">获得购买帮助</h3>
+                                    <p class="buystrip-info-copy">有问题吗？请询问卖家。</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 备注 -->
+                <section class="remark">
+                    <ol>
+                        <li id="remark-8">
+                            此价格为一块糖年糕的价格。
+                        </li>
+                        <li id="remark-9">
+                            尺寸和重量依制作容器的大小不同而可能有所差异。
+                        </li>
+                        <li id="remark-10">
+                            零使用防腐剂或相同效果添加物。请放置在阴凉的区域或冷藏柜里。
+                        </li>
+                        <li id="remark-11">
+                            只贩售和提供服务给位于诗巫（沙捞越，马来西亚）的顾客。选择自取的顾客可以选择在华利（诗巫）超市或者美丹（诗巫）超市取货。顾客需达成条件（购买总价超过50令吉）才能享有免费送货上门的服务。顾客购买总价超过40令吉（低过50令吉）可以享有3令吉送货上门的服务。某些地区不支持送货上门服务，详情请咨询卖家。
+                        </li>
+                    </ol>
+                </section>
+            </div>
+        </div>
+    </div>
 </body>
-<script type="text/javascript">
-var wrapper = document.getElementById("nav-items");
-var left = document.getElementById("nav-paddle-left");
-var right = document.getElementById("nav-paddle-right");
-wrapper.onscroll = function() { scrollFunction() };
-
-function scrollFunction() {
-    if (wrapper.scrollLeft > 0) {
-        left.disabled = false;
-    } else {
-        left.disabled = true;
-    }
-
-    var scrollTotal = wrapper.scrollWidth - wrapper.clientWidth;
-
-    if (wrapper.scrollLeft / scrollTotal == 1) {
-        right.disabled = true;
-    } else {
-        right.disabled = false;
-    }
-}
-
-function scrollToLeft() {
-    wrapper.scrollTo({
-        left: 0,
-        behavior: 'smooth'
-    });
-}
-
-function scrollToRight() {
-    wrapper.scrollTo({
-        left: 120,
-        behavior: 'smooth'
-    });
-}
-</script>
-<script>
-function openEventP(evt, cityName) {
-    var i, linkscontent, links;
-    linkscontent = document.getElementsByClassName("links-content");
-    for (i = 0; i < linkscontent.length; i++) {
-        linkscontent[i].style.display = "none";
-    }
-    links = document.getElementsByClassName("nav-link");
-    for (i = 0; i < links.length; i++) {
-        links[i].className = links[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("DOpen").click();
-</script>
-<script type="text/javascript">
-var imageIndex = 1;
-showImages(imageIndex);
-
-function NPimage(n) {
-    showImages(imageIndex += n);
-}
-
-function myImage(n) {
-    showImages(imageIndex = n);
-}
-
-function showImages(n) {
-    var i;
-    var image = document.getElementsByClassName("core-gallery-item");
-    var dots = document.getElementsByClassName("dotnav-item");
-    if (n > image.length) { imageIndex = 1 }
-    if (n < 1) { imageIndex = image.length }
-    for (i = 0; i < image.length; i++) {
-        image[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" current", "");
-    }
-    image[imageIndex - 1].style.display = "block";
-    dots[imageIndex - 1].className += " current";
-}
-</script>
+<script type="text/javascript" src="nav.js"></script>
+<script type="text/javascript" src="image-g.js"></script>
 
 </html>

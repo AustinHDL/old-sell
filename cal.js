@@ -8,22 +8,27 @@
 	        document.getElementById("pick-box").style.display = "block";
 	        document.getElementById("select-cover-1").removeAttribute("onclick");
 	        document.getElementById("select-cover-2").removeAttribute("onclick");
+	        document.getElementById("select-cover-3").removeAttribute("onclick");
 	        document.getElementById("bg-quantity").disabled = false;
 	        document.getElementById("hj-quantity").disabled = false;
+	        document.getElementById("ng-quantity").disabled = false;
 	    } else if (send.checked) {
 	        document.getElementById("summary-shipping").style.display = "block";
 	        document.getElementById("address-box").style.display = "block";
 	        document.getElementById("pick-box").style.display = "none";
 	        document.getElementById("select-cover-1").removeAttribute("onclick");
 	        document.getElementById("select-cover-2").removeAttribute("onclick");
+	        document.getElementById("select-cover-3").removeAttribute("onclick");
 	        document.getElementById("bg-quantity").disabled = false;
 	        document.getElementById("hj-quantity").disabled = false;
+	        document.getElementById("ng-quantity").disabled = false;
 	    } else {
 	        document.getElementById("summary-shipping").style.display = "none";
 	        document.getElementById("address-box").style.display = "block";
 	        document.getElementById("pick-box").style.display = "block";
 	        document.getElementById("bg-quantity").disabled = true;
 	        document.getElementById("hj-quantity").disabled = true;
+	        document.getElementById("ng-quantity").disabled = true;
 	    }
 
 	    //白果一包五片
@@ -38,8 +43,14 @@
 	    var hjtotal = hjprice * hjquantity;
 	    document.getElementById("hj-totalprice").innerHTML = "RM" + hjtotal.toFixed(2);
 
+		//年糕
+	    var ngprice = 4; //RM15
+	    var ngquantity = document.getElementById("ng-quantity").value;
+	    var ngtotal = ngprice * ngquantity;
+	    document.getElementById("ng-totalprice").innerHTML = "RM" + ngtotal.toFixed(2);
+
 	    //小计
-	    var subtotal = bgtotal + hjtotal;
+	    var subtotal = bgtotal + hjtotal + ngtotal;
 	    document.getElementById("subtotal").innerHTML = "RM" + subtotal.toFixed(2);
 
 	    //运输

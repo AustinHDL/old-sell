@@ -15,6 +15,7 @@ body {
     font-style: normal;
 }
 
+/* 商品选择栏 */
 #nav {
     padding: 0;
     padding-top: 8px;
@@ -95,6 +96,13 @@ a {
     background-size: 54px 54px;
     background-repeat: no-repeat;
     background-image: url('Images/Home/drinks.png');
+    width: 54px;
+}
+
+.niangao .nav-icon {
+    background-size: 54px 54px;
+    background-repeat: no-repeat;
+    background-image: url('Images/Home/niangao.png');
     width: 54px;
 }
 
@@ -212,7 +220,7 @@ button:disabled {
     display: block;
 }
 
-/* Banner */
+/* 横幅 */
 #banner,
 #banner:before,
 #banner:after,
@@ -263,7 +271,7 @@ button:disabled {
     }
 }
 
-/* Banner - Background */
+/* 横幅 - 背景 */
 #banner .banner-background {
     position: absolute;
     left: 0;
@@ -305,7 +313,7 @@ button:disabled {
     }
 }
 
-/* Banner - Content */
+/* 横幅 - 内容 */
 #banner .banner-content {
     margin: 0 auto;
     max-width: 980px;
@@ -416,6 +424,7 @@ button:disabled {
     }
 }
 
+/* 主内容 */
 .content-container {
     width: 100%;
     display: block;
@@ -429,6 +438,7 @@ button:disabled {
     display: block;
 }
 
+/* 示意图 */
 .image-container {
     ;
     width: 100%;
@@ -517,6 +527,7 @@ p+* {
     margin-top: 13.6px;
 }
 
+/* 重点区域 */
 .important-section {
     background-color: #FFF4D3;
 }

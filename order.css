@@ -469,18 +469,18 @@ button {
     max-width: 75%;
 }
 
-.customer .customer-container .customer-content .customer-labelinput{
+.customer .customer-container .customer-content .customer-labelinput {
     position: relative;
 }
 
-.customer .customer-container .customer-content .customer-labelinput .form-input{
+.customer .customer-container .customer-content .customer-labelinput .form-input {
     color: #1d1d1f;
     border-color: #d2d2d7;
     background-color: hsla(0, 0%, 100%, .8);
     text-overflow: ellipsis;
 }
 
-.customer .customer-container .customer-content .customer-labelinput .form-input textarea{
+.customer .customer-container .customer-content .customer-labelinput .form-input textarea {
     color: #1d1d1f;
     background-color: initial;
 }
@@ -653,7 +653,7 @@ button {
     float: right;
 }
 
-.info .info-container .info-wrapper .content{
+.info .info-container .info-wrapper .content {
     width: 100%;
     margin: 18px 0;
     padding: 14px 0;
@@ -662,12 +662,12 @@ button {
     display: block;
 }
 
-.info .info-container .info-wrapper .content .content-box{
+.info .info-container .info-wrapper .content .content-box {
     margin: 0 14px;
     pointer-events: none;
 }
 
-.info .info-container .info-wrapper .content .content-box .title{
+.info .info-container .info-wrapper .content .content-box .title {
     font-size: 20px;
     line-height: 24px;
     font-weight: bold;
@@ -697,7 +697,7 @@ button {
     pointer-events: auto;
 }
 
-.info .info-container .info-wrapper .content .content-box #product-select-total{
+.info .info-container .info-wrapper .content .content-box #product-select-total {
     font-size: 18px;
     line-height: 22px;
     font-weight: bold;
@@ -705,7 +705,7 @@ button {
     text-align: right;
 }
 
-@media only screen and (max-width: 980px){
+@media only screen and (max-width: 980px) {
     .cart-container {
         padding-top: 58px;
         margin-bottom: 80px;
@@ -876,7 +876,12 @@ button {
 }
 
 /* Banner */
-#banner, #banner:before, #banner:after, #banner *, #banner *:before, #banner *:after {
+#banner,
+#banner:before,
+#banner:after,
+#banner *,
+#banner *:before,
+#banner *:after {
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
     margin: 0;
@@ -885,7 +890,7 @@ button {
     letter-spacing: normal;
 }
 
-#banner{
+#banner {
     font-weight: normal;
     -webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
@@ -904,7 +909,7 @@ button {
     position: sticky;
 }
 
-#banner .banner-wrapper{
+#banner .banner-wrapper {
     position: absolute;
     top: 0;
     left: 0;
@@ -914,7 +919,7 @@ button {
     z-index: 1;
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
     #banner {
         margin-bottom: -48px;
         height: 48px;
@@ -922,7 +927,7 @@ button {
 }
 
 /* Banner - Background */
-#banner .banner-background{
+#banner .banner-background {
     position: absolute;
     left: 0;
     top: 0;
@@ -933,10 +938,10 @@ button {
     transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
 }
 
-#banner.banner-area .banner-background{
+#banner.banner-area .banner-background {
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
-    background-color: rgba(255,255,255,0.72);
+    background-color: rgba(255, 255, 255, 0.72);
 }
 
 #banner .banner-background:after {
@@ -946,7 +951,7 @@ button {
     top: 100%;
     height: 1px;
     z-index: 1;
-    background-color: rgba(0,0,0,0.16);
+    background-color: rgba(0, 0, 0, 0.16);
 }
 
 #banner.banner-area .banner-background:after {
@@ -955,7 +960,7 @@ button {
     width: 100%;
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
     #banner .banner-background {
         min-height: 48px;
         -webkit-transition: background-color 0.5s ease 0.7s;
@@ -964,7 +969,7 @@ button {
 }
 
 /* Banner - Content */
-#banner .banner-content{
+#banner .banner-content {
     margin: 0 auto;
     max-width: 980px;
     padding: 0 22px;
@@ -972,16 +977,17 @@ button {
     z-index: 2;
 }
 
-#banner .banner-content a{
+#banner .banner-content a {
     text-decoration: none;
 }
 
-#banner .banner-content::before, #banner .banner-content::after {
+#banner .banner-content::before,
+#banner .banner-content::after {
     content: ' ';
     display: table;
 }
 
-#banner .banner-title{
+#banner .banner-title {
     font-size: 21px;
     line-height: 24px;
     font-weight: bold;
@@ -995,7 +1001,8 @@ button {
     white-space: nowrap;
 }
 
-#banner .banner-title, #banner .banner-title a {
+#banner .banner-title,
+#banner .banner-title a {
     color: #6667AA;
     -webkit-transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
     transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
@@ -1018,7 +1025,7 @@ button {
     pointer-events: none;
 }
 
-#banner .banner-action{
+#banner .banner-action {
     float: right;
 }
 
@@ -1045,16 +1052,17 @@ button {
     border-radius: 12px;
 }
 
-@media only screen and (max-width: 1023px){
+@media only screen and (max-width: 1023px) {
     #banner .banner-content {
         border-bottom: none;
     }
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
     #banner .banner-content {
         padding: 0 16px;
     }
+
     #banner .banner-title {
         font-size: 19px;
         line-height: 24px;
@@ -1064,7 +1072,8 @@ button {
         margin: 12px 0 -12px;
         height: 48px;
     }
-    #banner .banner-action-button{
+
+    #banner .banner-action-button {
         margin-left: 17px;
         margin-top: -3px;
     }

@@ -125,7 +125,7 @@
                     </div>
                 </li>
                 <li class="bag-item">
-                    <div class="iteminfo last2" id="iteminfo">
+                    <div class="iteminfo" id="iteminfo">
                         <div class="iteminfo-image">
                             <img width="400" height="400" src="Images/drinks.jpg">
                         </div>
@@ -172,6 +172,60 @@
                                 <div class="iteminfo-detail-pricedetail">
                                     <div class="iteminfo-detail-price">
                                         <span id="hj-totalprice">RM0.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="bag-item">
+                    <div class="iteminfo last2" id="iteminfo">
+                        <div class="iteminfo-image">
+                            <img width="400" height="400" src="Images/niangao.jpg">
+                        </div>
+                        <div class="iteminfo-content">
+                            <div class="iteminfo-detail">
+                                <div class="iteminfo-detail-title-wrapper">
+                                    <h2 class="iteminfo-detail-title">
+                                        <span>
+                                            糖年糕
+                                        </span>
+                                    </h2>
+                                </div>
+                                <div class="iteminfo-detail-quantity" id="select-cover-3" onclick="myCheck()">
+                                    <div class="quantity">
+                                        <div class="quantity-selector">
+                                            <div class="quantity-wrapper">
+                                                <select name="糖年糕" class="form-dropdown" id="ng-quantity" onchange="myFunction()" required disabled>
+                                                    <option value="0">0</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                    <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                    <option value="16">16</option>
+                                                    <option value="17">17</option>
+                                                    <option value="18">18</option>
+                                                    <option value="19">19</option>
+                                                    <option value="20">20</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="iteminfo-detail-pricedetail">
+                                    <div class="iteminfo-detail-price">
+                                        <span id="ng-totalprice">RM0.00</span>
                                     </div>
                                 </div>
                             </div>
@@ -266,7 +320,7 @@
             </div>
             <div class="cart-button">
                 <div class="cart-button-container">
-                    <div class="cart-button-wrapper" id="checkinfo" onclick="myCheck2()">
+                    <div class="cart-button-wrapper" id="checkinfo">
                         <button class="form-button" id="form-button" type="button" onclick="myInfo()" disabled>
                             <span>
                                 生成订单
@@ -291,9 +345,8 @@
                                 <br>
                                 <div id="shipping-select"></div>
                                 <div id="product-select-bg"></div>
-                                <div id="product-select-bg02"></div>
                                 <div id="product-select-hj"></div>
-                                <div id="product-select-hz"></div>
+                                <div id="product-select-ng"></div>
                                 <br>
                                 <div id="product-select-total"></div>
                                 <button onclick="screenshot()" class="btn" id="btn">生成图片</button>
@@ -328,6 +381,11 @@ function myInfo() {
     var hjqua = document.getElementById('hj-quantity');
     if (hjqua.value > 0) {
         document.getElementById("product-select-hj").innerHTML = "<b>" + hjqua.name + "：</b>" + hjqua.value + "瓶";
+    }
+
+    var ngqua = document.getElementById('ng-quantity');
+    if (ngqua.value > 0) {
+        document.getElementById("product-select-ng").innerHTML = "<b>" + ngqua.name + "：</b>" + ngqua.value + "块";
     }
 
     var cname = document.getElementById('name');

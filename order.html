@@ -76,42 +76,9 @@
                                 </div>
                                 <div class="iteminfo-detail-quantity" id="select-cover-1" onclick="myCheck()">
                                     <div class="quantity">
-                                        <div class="quantity-selector">
-                                            <div class="quantity-wrapper">
-                                                <select name="白粿一包（五片）" class="form-dropdown" id="bg-quantity" onchange="myFunction()" required disabled>
-                                                    <option value="0">0</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                    <option value="7">7</option>
-                                                    <option value="8">8</option>
-                                                    <option value="9">9</option>
-                                                    <option value="10">10</option>
-                                                    <option value="11">11</option>
-                                                    <option value="12">12</option>
-                                                    <option value="13">13</option>
-                                                    <option value="14">14</option>
-                                                    <option value="15">15</option>
-                                                    <option value="16">16</option>
-                                                    <option value="17">17</option>
-                                                    <option value="18">18</option>
-                                                    <option value="19">19</option>
-                                                    <option value="20">20</option>
-                                                    <option value="11">21</option>
-                                                    <option value="12">22</option>
-                                                    <option value="13">23</option>
-                                                    <option value="14">24</option>
-                                                    <option value="15">25</option>
-                                                    <option value="16">26</option>
-                                                    <option value="17">27</option>
-                                                    <option value="18">28</option>
-                                                    <option value="19">29</option>
-                                                    <option value="20">30</option>
-                                                </select>
-                                            </div>
+                                        <div class="form-textbox">
+                                            <input type="tel" name="白粿一包（五片）" class="form-textbox-input" id="bg-quantity" onkeyup="myFunction()" maxlength="2" value="0" disabled>
+                                            <span class="form-textbox-label">数量：</span>
                                         </div>
                                     </div>
                                 </div>
@@ -140,32 +107,9 @@
                                 </div>
                                 <div class="iteminfo-detail-quantity" id="select-cover-2" onclick="myCheck()">
                                     <div class="quantity">
-                                        <div class="quantity-selector">
-                                            <div class="quantity-wrapper">
-                                                <select name="米红酒" class="form-dropdown" id="hj-quantity" onchange="myFunction()" required disabled>
-                                                    <option value="0">0</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                    <option value="7">7</option>
-                                                    <option value="8">8</option>
-                                                    <option value="9">9</option>
-                                                    <option value="10">10</option>
-                                                    <option value="11">11</option>
-                                                    <option value="12">12</option>
-                                                    <option value="13">13</option>
-                                                    <option value="14">14</option>
-                                                    <option value="15">15</option>
-                                                    <option value="16">16</option>
-                                                    <option value="17">17</option>
-                                                    <option value="18">18</option>
-                                                    <option value="19">19</option>
-                                                    <option value="20">20</option>
-                                                </select>
-                                            </div>
+                                        <div class="form-textbox">
+                                            <input type="tel" name="米红酒" class="form-textbox-input" id="hj-quantity" onkeyup="myFunction()" maxlength="2" value="0" disabled>
+                                            <span class="form-textbox-label">数量：</span>
                                         </div>
                                     </div>
                                 </div>
@@ -194,32 +138,9 @@
                                 </div>
                                 <div class="iteminfo-detail-quantity" id="select-cover-3" onclick="myCheck()">
                                     <div class="quantity">
-                                        <div class="quantity-selector">
-                                            <div class="quantity-wrapper">
-                                                <select name="糖年糕" class="form-dropdown" id="ng-quantity" onchange="myFunction()" required disabled>
-                                                    <option value="0">0</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                    <option value="7">7</option>
-                                                    <option value="8">8</option>
-                                                    <option value="9">9</option>
-                                                    <option value="10">10</option>
-                                                    <option value="11">11</option>
-                                                    <option value="12">12</option>
-                                                    <option value="13">13</option>
-                                                    <option value="14">14</option>
-                                                    <option value="15">15</option>
-                                                    <option value="16">16</option>
-                                                    <option value="17">17</option>
-                                                    <option value="18">18</option>
-                                                    <option value="19">19</option>
-                                                    <option value="20">20</option>
-                                                </select>
-                                            </div>
+                                        <div class="form-textbox">
+                                            <input type="tel" name="糖年糕" class="form-textbox-input" id="ng-quantity" onkeyup="myFunction()" maxlength="2" value="0" disabled>
+                                            <span class="form-textbox-label">数量：</span>
                                         </div>
                                     </div>
                                 </div>
@@ -269,7 +190,7 @@
                 <div class="customer-container">
                     <div class="customer-content">
                         <div class="customer-labelinput" id="text-box-1">
-                            <input type="text" name="姓名" class="form-input" id="name" onblur="myFill()" onkeyup="myGeB()" onkeypress="return /[a-z]/i.test(event.key)" autocomplete="off" value>
+                            <input type="text" name="姓名" class="form-input" id="name" onblur="myFill()" onkeyup="myGeB()" autocomplete="off" value>
                             <span class="form-label">姓名</span>
                             <div class="form-message-wrapper">
                                 <span class="form-message">姓名未填写。</span>

@@ -452,6 +452,7 @@ button:disabled {
 .image-container .image-hero img {
     display: block;
     width: 100%;
+    pointer-events: none;
 }
 
 @media only screen and (max-width: 767px) {

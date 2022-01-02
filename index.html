@@ -35,6 +35,14 @@
                         <span class="nav-new">新</span>
                     </a>
                 </li>
+                <!-- 食谱 -->
+                <li class="nav-item recipe">
+                    <a class="nav-link" href="#" onclick="openEventP(event, 'SP')" id="four">
+                        <figure class="nav-icon"></figure>
+                        <span class="nav-label">食谱</span>
+                        <span class="nav-new">新</span>
+                    </a>
+                </li>
             </ul>
             <!-- 左右按键 -->
             <div class="nav-paddles">
@@ -540,8 +548,187 @@
             </div>
         </div>
     </div>
+    <!-- 食谱-内容 -->
+    <div id="SP" class="links-content">
+        <!-- 横幅 -->
+        <nav id="banner" class="banner-area sticky">
+            <div class="banner-wrapper">
+                <div class="banner-background"></div>
+                <div class="banner-content">
+                    <!-- 标题 -->
+                    <div class="banner-title">
+                        <a href="#">食谱</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- 内容 -->
+        <div class="content-container">
+            <div class="content-section">
+                <!-- 搜索框 -->
+                <div class="search-container">
+                    <div class="search-placeholder-bar">
+                        <form id="search-placeholder" class="search-placeholder-input">
+                            <div class="search-placeholder-input-text">
+                                <input type="text" id="myInput" class="searchform-input" onkeyup="myS1Function()" placeholder="搜索食谱" autocorrect="off" autocomplete="off">
+                                <button class="searchform-icon" type="submit" disabled></button>
+                                <button id="search-reset" class="searchform-reset" onclick="document.getElementById('myInput').value = ''" disabled>
+                                    <span class="reset-icon"></span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <ul id="myUL">
+                    <li class="small-container">
+                        <div class="container">
+                            <a class="title">
+                                <span>
+                                    干炒白粿
+                                </span>
+                            </a>
+                            <div class="content">
+                                <div class="content-row">
+                                    <div class="content-rowheader">
+                                        食材明细
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="content-row">
+                                    <div class="content-rowheader medium">
+                                        主料
+                                    </div>
+                                    <div class="content-column">
+                                        <p>
+                                            白粿： 五片
+                                        </p>
+                                        <p>
+                                            白菜 / 圆包菜： 200克
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="content-row">
+                                    <div class="content-rowheader medium">
+                                        辅料
+                                    </div>
+                                    <div class="content-column">
+                                        <span>
+                                            鸡蛋： 两颗
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="content-row">
+                                    <div class="content-rowheader medium">
+                                        配料
+                                    </div>
+                                    <div class="content-column">
+                                        <p>
+                                            本地红酒： 一汤匙
+                                        </p>
+                                        <p>
+                                            老抽： 一汤匙
+                                        </p>
+                                        <p>
+                                            生抽： 一汤匙
+                                        </p>
+                                        <p>
+                                            食油： 适量
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="content-row">
+                                    <div class="content-rowheader">
+                                        步骤
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="content-row">
+                                    <div class="content-rowheader medium">
+                                        一、
+                                    </div>
+                                    <div class="content-column">
+                                        <span>
+                                            将白粿切片、白菜切小、鸡蛋打散备用。
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="content-row">
+                                    <div class="content-rowheader medium">
+                                        二、
+                                    </div>
+                                    <div class="content-column">
+                                        <span>
+                                            将食油倒入锅内，然后大火加热。大约等待一分钟，将鸡蛋液导入。将鸡蛋液翻炒至九分熟即可关火出锅，备用。
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="content-row">
+                                    <div class="content-rowheader medium">
+                                        三、
+                                    </div>
+                                    <div class="content-column">
+                                        <span>
+                                            将食油倒入锅内，然后大火加热。倒入白菜，翻炒三十秒。再倒入白粿。
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="content-row">
+                                    <div class="content-rowheader medium">
+                                        四、
+                                    </div>
+                                    <div class="content-column">
+                                        <span>
+                                            翻炒后加水（没过白粿）、加盖焖煮一会儿。加入炒好的鸡蛋，再加入本地红酒，老抽，生抽翻炒、收汁，然后出锅。
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 <script type="text/javascript" src="nav.js"></script>
 <script type="text/javascript" src="image-g.js"></script>
-
+<script type="text/javascript">
+function myS1Function() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+    if (input.value.length > 0) {
+        document.getElementById("search-placeholder").classList.add("withreset");
+        document.getElementById("search-reset").disabled = false;
+    } else {
+        document.getElementById("search-placeholder").classList.remove("withreset");
+        document.getElementById("search-reset").disabled = true;
+    }
+}
+</script>
 </html>

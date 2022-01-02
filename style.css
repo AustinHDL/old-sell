@@ -106,6 +106,13 @@ a {
     width: 54px;
 }
 
+.recipe .nav-icon {
+    background-size: 54px 54px;
+    background-repeat: no-repeat;
+    background-image: url('Images/Home/recipe.png');
+    width: 54px;
+}
+
 .nav-label {
     font-size: 14px;
     line-height: 18px;
@@ -870,4 +877,238 @@ button#two.current~.core-gallery-scroller {
     height: 26px;
     width: 26px;
     display: block;
+}
+
+/* 搜索框  */
+.search-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 30px 0 16px 0;
+    padding-top: 48px;
+}
+
+.search-container .search-placeholder-bar {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 0;
+    pointer-events: auto;
+    letter-spacing: normal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.search-container .search-placeholder-bar .search-placeholder-input {
+    display: block;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    margin: 0;
+    pointer-events: auto;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    height: 36px;
+    line-height: 36px;
+    padding: 0;
+}
+
+.search-container .search-placeholder-bar .search-placeholder-input .search-placeholder-input-text {
+    display: block;
+    position: relative;
+    z-index: 2;
+    padding: 0;
+    height: 36px;
+}
+
+.search-container .search-placeholder-bar .search-placeholder-input .search-placeholder-input-text .searchform-input {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    margin: 0;
+    pointer-events: auto;
+    border: 1px solid #d2d2d7;
+    background-color: #fff;
+    border-radius: 12px;
+    color: #F97300;
+    outline: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: normal;
+    font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
+    height: 21px;
+    padding: 6.5px 40px;
+    width: calc(100% - (40px * 2) - (1px * 2));
+    position: relative;
+}
+
+.search-container .search-placeholder-bar .search-placeholder-input .search-placeholder-input-text .searchform-input:focus{
+    border-color: #0071e3;
+    box-shadow: 0 0 0 4px rgba(0, 125, 250, .6);
+    outline: none;
+}
+
+.search-container .search-placeholder-bar .search-placeholder-input .search-placeholder-input-text .searchform-icon {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    margin-left: 10px;
+    padding: 0;
+    pointer-events: auto;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    background-image: url("Images/Icon/search-icon.svg");
+    width: 30px;
+    height: 36px;
+    background-position: left 8px center;
+    opacity: .8;
+    cursor: default;
+}
+
+.search-container .search-placeholder-bar .search-placeholder-input .search-placeholder-input-text .searchform-reset {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    cursor: default;
+    opacity: 0;
+    display: block;
+    height: 36px;
+    width: 30px;
+    height: 100%;
+    pointer-events: none;
+    -webkit-transition: opacity 0.3s ease, display 0.3s ease;
+    transition: opacity 0.3s ease, display 0.3s ease;
+}
+
+.search-container .search-placeholder-bar .search-placeholder-input .search-placeholder-input-text .searchform-reset .reset-icon {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    margin-right: 10px;
+    padding: 0;
+    pointer-events: auto;
+    right: 8px;
+    display: block;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
+    width: 15px;
+    height: 16px;
+    background-size: 15px 16px;
+    background-repeat: no-repeat;
+    background-image: url("Images/Icon/reset-icon.svg");
+}
+
+.search-container .search-placeholder-bar .search-placeholder-input.withreset .search-placeholder-input-text .searchform-reset {
+    cursor: pointer;
+    opacity: 1;
+    pointer-events: auto
+}
+
+.small-container {
+    width: 100%;
+    height: auto;
+    margin: 16px 0;
+    padding: 20px 0;
+    position: relative;
+    background-color: #FFF4D3;
+    list-style-type: none;
+    border-radius: 20px;
+}
+
+.small-container .container {
+    margin: 0 40px;
+}
+
+.small-container .container .title{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
+    position: relative;
+    color: #6667AA;
+    padding: 20px 0;
+    display: block;
+}
+
+.small-container .container .content{
+    padding: 20px 0;
+    position: relative;
+    display: block;
+}
+
+.small-container .container .content .content-row:before {
+    content: " ";
+    display: table;
+}
+
+.small-container .container .content .content-row:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.small-container .container .content .content-row .content-rowheader{
+    float: left;
+    width: 100%;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
+    position: relative;
+    margin-top: -3px;
+    color: #6667AA;
+}
+
+.small-container .container .content .content-row .content-rowheader.medium{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
+    width: 22%;
+}
+
+.small-container .container .content .content-row .content-column{
+    float: left;
+    margin-left: 3%;
+    width: 75%;
+}
+
+.small-container .container .content .content-row .content-column p {
+    margin-right: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+    .specs-rowheader {
+        font-size: 19px;
+        line-height: 23px;
+        font-weight: bold;
+        font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
+    }
+    .small-container .container .content .content-row .content-rowheader.medium{
+        font-size: 17px;
+        line-height: 21px;
+        font-weight: bold;
+        font-family: "Helvetica", "Arial", "Microsoft YaHei", sans-serif;
+    }
 }

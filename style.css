@@ -1025,6 +1025,10 @@ button#two.current~.core-gallery-scroller {
     pointer-events: auto
 }
 
+.recipe-container{
+    margin: 16px 0 30px 0;
+}
+
 .small-container {
     width: 100%;
     height: auto;
